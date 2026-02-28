@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= movie.title %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <a href="/">← Back to Home</a>
+
+      <h1><%= movie.title %></h1>
+
+      <!-- Movie Image -->
+      <figure>
+        <img src="<%= movie.image %>" alt="<%= movie.title %> poster" />
+      </figure>
+
+      <p><strong>Mood:</strong> <%= movie.mood %></p>
+      <p><strong>Genre:</strong> <%= movie.genre %></p>
+      <p><strong>Year:</strong> <%= movie.year %></p>
+      <p><strong>Streaming:</strong> <%= movie.streaming %></p>
+
+      <p><%= movie.fullDescription %></p>
+    </main>
+  </body>
+</html>

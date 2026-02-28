@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comfort Movies for Every Mood</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🎬 Comfort Movies for Every Mood</h1>
+
+    <% movies.forEach(movie => { %>
+      <article>
+        <h2>
+          <a href="/movies/<%= movie.slug %>">
+            <%= movie.title %>
+          </a>
+        </h2>
+
+        <p><strong>Mood:</strong> <%= movie.mood %></p>
+        <p><strong>Genre:</strong> <%= movie.genre %> | <%= movie.year %></p>
+        <p><%= movie.shortDescription %></p>
+      </article>
+    <% }) %>
+
+  </main>
+</body>
+</html>
