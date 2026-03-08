@@ -6,9 +6,12 @@ const config = {
   host: process.env.PGHOST,
   port: process.env.PGPORT,
   database: process.env.PGDATABASE,
-  ssl: {
-    rejectUnauthorized: false,
-  },
 };
+
+if (process.env.PGHOST.includes("render.com")) {
+  config.ssl = {
+    rejectUnauthorized: false,
+  };
+}
 
 export const pool = new pg.Pool(config);
