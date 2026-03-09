@@ -29,13 +29,25 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://imgur.com/a/0QRmMhP.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/lFzYf5m.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
 IMGUR
 
 ## Notes
+
+```sql
+SELECT * FROM movies;
+
+ id | slug | title | mood | genre | year | streaming
+----+------+-------+------+-------+------+----------
+ 1  | little-miss-sunshine | Little Miss Sunshine | Feeling Lost | Comedy-Drama | 2006 | Hulu
+ 2  | the-intern | The Intern | Need Comfort | Comedy | 2015 | Max
+ 3  | perks-of-being-a-wallflower | The Perks of Being a Wallflower | Feeling Emotional | Drama | 2012 | Netflix
+ 4  | crazy-rich-asians | Crazy Rich Asians | Romantic Mood | Romance | 2018 | Prime Video
+ 5  | secret-life-of-walter-mitty | The Secret Life of Walter Mitty | Adventure Craving | Adventure | 2013 | Disney+
+```
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
 
